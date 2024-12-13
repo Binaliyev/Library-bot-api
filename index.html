@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <input type="file" id="file">
 <input type="file" id="audio">
+
+<!-- <input type="file" id="videoFile"> -->
+<!-- <input type="file" id="file"> -->
+
 <div class="container app">
   <div class="row app-one">
     <div class="col-sm-4 side">
@@ -457,7 +461,7 @@
       <div class="row heading">
         <div class="col-sm-2 col-md-1 col-xs-3 heading-avatar">
           <div class="heading-avatar-icon">
-            <img src="https://bootdey.com/img/Content/avatar/avatar6.png">
+            <img id="activeUserImage" src="https://bootdey.com/img/Content/avatar/avatar6.png">
           </div>
         </div>
         <div class="col-sm-8 col-xs-7 heading-name">
@@ -479,9 +483,9 @@
           </div>
         </div>
 
-        <div class="row message-body">
+        <template class="js-user-message">
           <div class="col-sm-12 message-main-receiver">
-            <div class="receiver">
+          <div class="receiver">
               <div class="message-text">
                Hi, what are you doing?!
               </div>
@@ -489,10 +493,13 @@
                 Sun
               </span>
             </div>
-          </div>
-        </div>
+            </div>
+        </template>
 
         <div class="row message-body">
+         
+        </div>
+        <template class="js-me-message-temp">
           <div class="col-sm-12 message-main-sender">
             <div class="sender">
               <div class="message-text">
@@ -503,6 +510,9 @@
               </span>
             </div>
           </div>
+        </template>
+        <div class="row message-body">
+          
         </div>
       </div>
 
